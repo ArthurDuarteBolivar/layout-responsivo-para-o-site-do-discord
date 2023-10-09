@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+    font-family: 'Luckiest Guy';
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    overflow-x: hidden;
+}
+
+@media screen and (min-width: 400px) {
+  header{
+    width: none;
+  }  
+}
+
+header {
+    background-image: url("../background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 24px;
+    padding: 69px 24px;
+}
+
+header h1 {
+    width: 70%;
+    align-self: flex-start;
+    padding: 0 24px;
+    font-family: Luckiest Guy;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+header p {
+    padding: 0 24px;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+header div button {
+    cursor: pointer;
+    background-color: white;
+    border-radius: 28px;
+    flex-shrink: 0;
+    padding: 16px 0;
+    border: none;
+    color: #23272A;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    width: 90%;
+}
+
+header div button:nth-child(2) {
+    color: white;
+    background-color: black;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+main section {
+    background-color: white;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: center;
+    gap: 27px;
+}
+
+main section:nth-child(2) {
+    background: #F6F6F6;
+}
+
+main section div h2 {
+    color: #23272A;
+    font-family: Open Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+main section div p {
+    color: #23272A;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+main section img {
+    max-width: 100%;
+}
+
+
+.section {
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: center;
+    gap: 27px;
+    padding: 40px 24px;
+}
+
+.section h2 {
+    color: #23272A;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section p {
+    color: #23272A;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section img {
+    max-width: 100%;
+}
+
+body footer {
+    background: #23272A;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding: 44px 134px 51px 133px;
+}
+
+
+@media screen and (min-width: 930px) {
+
+    header{
+        background-image: url("../background-large.png");
+    }
+
+    header h1 {
+        align-self: center;
+        text-align: center;
+    }
+
+
+    header div {
+        flex-direction: row;
+    }
+
+    header div button {
+        width: auto;
+        padding: 16px 17px;
+    }
+
+    header p {
+        width: 65%;
+    }
+
+    main section {
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    main section div {
+        width: 20%;
+    }
+
+    .section{
+        align-items: center;
+    }
+
+    .section p{
+        text-align: center;
+        width: 65%;
+    }
+
+}
